@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Project</title>
     <!-- Gilroy font css -->
-    <link rel="stylesheet" href="fonts/gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
+    <!-- Zing rust demo font -->
+    <link rel="stylesheet" href="./fonts/zing-rust-demo/stylesheet.css">
     <!-- Normalize css link -->
-    <link rel="stylesheet" href="libs/normalize.css">
+    <link rel="stylesheet" href="./libs/normalize.css">
     <!-- Bootstrap css link -->
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <!-- Custom css link -->
-    <link rel="stylesheet" href="css/style.css">
-    
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <!-- Header section -->
+        <header class="header">
+            <div class="container">
+                <a href="#" class="header__logo">LOGOS</a>
+                <div class="header__contact">
+                    <div class="header__search-box position-relative">
+                        <img class="header position-absolute" src="images/icons/Location.svg" alt="Loctation icon">
+                        <input class="header__search w-100" type="text" placeholder="Введите адрес доставки" name="search">
+                        <img class="position-absolute" src="images/icons/Search.svg" alt="search icon">
+                    </div>
+                    <div class="header__contact-box">
+                        <div class="call-bg">
+                            <img src="images/icons/Calling.svg" alt="calling icon">
+                        </div>
+                        <div class="header__contact-number">
+                            <span>Контакты:</span>
+                            <a href="tel:+7(917)510-57-59">+7(917)510-57-59</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__card-btn">
+                    <button class="btn">
+                        Корзина
+                        <span>4</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Bootstrap js -->
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Swiper js -->
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <!-- Main js -->
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
