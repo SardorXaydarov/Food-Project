@@ -1,0 +1,72 @@
+@use "../abstracts/variables";
+
+.karzinka-dialog {
+    width: 458px;
+}
+
+.karzinka-content {
+    background: variables.$black;
+    border-radius: 10px;
+}
+
+.karzinka-content .modal-header {
+    border-bottom: none;
+    display: block;
+    text-align: right;
+}
+
+.karzinka-content .close {
+    position: relative;
+    right: 0;
+}
+
+.modal-mody .karzinka-img {
+    position: relative;
+    width: 76px;
+    height: 89px;
+
+}
+
+.karzinka-content .modal-body {
+    text-align: center;
+    padding-bottom: 62px;
+
+    h2 {
+        color: variables.$white;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 14px;
+        margin-bottom: 42px;
+    }
+
+    .karzina-btn {
+        padding: 17px 34px;
+        color: variables.$white;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.main-banner {
+    background: url('../../images/main-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 72px 0 137px 0;
+
+    .banner-info {
+        text-align: center;
+        color: variables.$white;
+        max-width: 613px;
+
+
+        h2 {
+            font-family: 'Zing Rust Demo Base';
+            font-size: 67px;
+            font-weight: 400;
+            transform: rotate(-8.368deg);
+            margin-top: 31px;
+            text-shadow: -8px 6px 0 rgba(255, 255, 255, 0.25);
+            
+        }
+    }
+}

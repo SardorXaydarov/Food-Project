@@ -10,28 +10,30 @@
     <!-- Zing rust demo font -->
     <link rel="stylesheet" href="./fonts/zing-rust-demo/stylesheet.css">
     <!-- Normalize css link -->
-    <link rel="stylesheet" href="./libs/normalize.css">
+    <link rel="stylesheet" href="libs/normalize.css">
     <!-- Bootstrap css link -->
-    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <!-- Custom css link -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <div class="wrapper">
         <!-- Header section -->
         <header class="header">
-            <div class="container">
+            <div class="container d-flex align-items-center">
                 <a href="#" class="header__logo">LOGOS</a>
-                <div class="header__contact">
+                <div class="header__contact d-flex align-items-center">
                     <div class="header__search-box position-relative">
-                        <img class="header position-absolute" src="images/icons/Location.svg" alt="Loctation icon">
-                        <input class="header__search w-100" type="text" placeholder="Введите адрес доставки" name="search">
-                        <img class="position-absolute" src="images/icons/Search.svg" alt="search icon">
+                        <img class="location-icon position-absolute" src="images/icons/Location.svg"
+                            alt="Loctation icon">
+                        <input class="header__search w-100" type="text" placeholder="Введите адрес доставки"
+                            name="search">
+                        <img class="position-absolute search-icon" src="images/icons/Search.svg" alt="search icon">
                     </div>
-                    <div class="header__contact-box">
+                    <div class="header__contact-box d-flex align-items-center">
                         <div class="call-bg">
-                            <img src="images/icons/Calling.svg" alt="calling icon">
+                            <img class="call-img" src="images/icons/Calling.svg" alt="calling icon">
                         </div>
                         <div class="header__contact-number">
                             <span>Контакты:</span>
@@ -39,15 +41,98 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__card-btn">
-                    <button class="btn">
+                <div class="header__cart-btn">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#karzinka">
                         Корзина
                         <span>4</span>
                     </button>
                 </div>
             </div>
         </header>
+
+        <!-- Main section -->
+        <main class="main">
+            <section class="main-banner">
+                <div class="container">
+                    <div class="banner-info">
+                        <h2>Доставка ВКУСНЕЙШИХ БЛЮд за 60 минут</h2>
+                        <button type="button" class="banner-btn">Ещё не пробовал?</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slider section -->
+            <section class="slider-section">
+                <div class="container">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#cold"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Холодные
+                                закуски</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Горячие
+                                закуски</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Мясные блюда</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Супы</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Рыбные блюда </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Гриль меню</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Фирменные блюда</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link last-child" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false"> Напитки</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
+
+
+    <!-- modal section -->
+    <div class="modal fade" id="karzinka" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered karzinka-dialog">
+            <div class="modal-content karzinka-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/close.svg" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="karzinka-img">
+                        <img src="images/icons/karzina-img.png" alt="karzina-img">
+                    </div>
+                    <h2>КОРЗИНА ПУСТАЯ</h2>
+                    <button type="button" class="karzina-btn btn">Посмотреть меню</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap js -->
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>

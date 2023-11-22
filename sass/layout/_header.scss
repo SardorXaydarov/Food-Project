@@ -1,0 +1,79 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
+
+.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 24px 0;
+
+    &__logo {
+        color: variables.$white;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 3.75px;
+        margin-right: 72px;
+    }
+
+    &__search-box {
+        width: 555px;
+        margin-right: 30px;
+    }
+
+    &__search {
+        border-radius: 10px;
+        background: variables.$input-bgcolor;
+        border: none;
+        color: variables.$white-gray;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 15px 17px 16px 48px;
+
+        &::placeholder {
+            color: variables.$white-gray;
+            font-size: 18px;
+        }
+
+    }
+
+    .location-icon {
+        @include mixin.search-icon($left: 18px);
+    }
+
+    .search-icon {
+        @include mixin.search-icon($right: 19px);
+    }
+
+    &__contact-box {
+        display: flex;
+
+        .call-bg {
+            background: variables.$black-green;
+            height: 32px;
+            border-radius: 50%;
+            padding: 0 9px;
+            line-height: 32px;
+        }
+    }
+
+    &__cart-btn{
+        margin-left: auto;
+    }
+}
+
+.header__contact-number {
+    margin-left: 10px;
+
+    span {
+        color: variables.$white-gray;
+        font-size: 12px;
+        line-height: 20px;
+        display: block;
+    }
+
+    a {
+        color: variables.$white-gray;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
