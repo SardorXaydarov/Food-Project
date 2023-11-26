@@ -1,5 +1,26 @@
 @use "../abstracts/variables";
 
+.banner-info {
+    position: relative;
+}
+
+.banner-btn {
+    color: variables.$white;
+    font-family: 'Zing Rust Demo Base';
+    font-size: 25px;
+    font-weight: 400;
+    background: variables.$linear-bg;
+    transform: skewY(350deg) rotate(0deg);
+    margin-top: 20px;
+    padding: 5px 23px;
+}
+
+.btn-img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 .karzinka-dialog {
     width: 458px;
 }
@@ -48,7 +69,7 @@
 }
 
 .main-banner {
-    background: url('../../images/main-banner.png');
+    background: url('../images/main-banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 72px 0 137px 0;
@@ -66,7 +87,374 @@
             transform: rotate(-8.368deg);
             margin-top: 31px;
             text-shadow: -8px 6px 0 rgba(255, 255, 255, 0.25);
-            
+
+        }
+    }
+}
+
+//navigation section styles//
+.navigation-section {
+    padding: 29px 0;
+
+    .container {
+        padding: 0;
+        position: relative;
+    }
+
+
+    .nav-list {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        justify-content: space-between;
+
+        .nav-item {
+            display: inline-block;
+
+            .link {
+                color: #cfcfcf;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding-bottom: 29px;
+                white-space: nowrap;
+
+                &:hover {
+                    color: #FFF;
+                    font-size: 18px;
+                    font-weight: 500;
+                    border-bottom: 3px solid #618967;
+                }
+
+                &:focus {
+                    color: #FFF;
+                    font-size: 18px;
+                    font-weight: 500;
+                    border-bottom: 3px solid #618967;
+                }
+
+                &.active {
+                    color: #FFF;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+// Title box //
+.title-box {
+    padding-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+    .container {
+        padding: 0;
+    }
+
+    .subtitle::before {
+        position: relative;
+        content: "";
+        top: -10px;
+        left: -13px;
+        width: 33px;
+        height: 4px;
+        transform: rotate(90deg);
+        background: #618967;
+        display: inline-block;
+    }
+
+    h1 {
+        color: variables.$white;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        left: -13px;
+    }
+}
+
+.our-coffe {
+    margin: 93px 37px 0 40px;
+    background: url(../images/our-coffe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        background: linear-gradient(90deg, #211F20 0%, rgba(68, 64, 63, 0.00) 100%);
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .container-coffe {
+        .coffe-info {
+            padding-top: 100px;
+            padding-left: 70px;
+            max-width: 633px;
+
+            h3 {
+                color: variables.$white;
+                font-size: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 26px;
+            }
+
+            p {
+                color: variables.$white-gray;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 25px;
+                width: 563px;
+            }
+
+            .coffe-btn {
+                color: variables.$white;
+                font-size: 13px;
+                font-weight: 700;
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                background: rgba(255, 255, 255, 0.05);
+                padding: 22px 25px 21px 64px;
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+.coffe-content {
+    padding: 71px 60px 71px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 650px;
+
+    .content-box {
+        background: rgba(80, 75, 74, 0.90);
+        backdrop-filter: blur(2px);
+
+        &:hover {
+            backdrop-filter: blur(5px);
+
+            svg {
+                path {
+                    fill: variables.$green;
+                }
+            }
+
+            .content-box__name p {
+                color: variables.$green;
+            }
+        }
+    }
+}
+
+.content-box {
+
+    width: 228px;
+    height: 227px;
+    padding: 66px 22px 40px 21px;
+    white-space: wrap;
+
+    .content-box__img {
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    .content-box__name {
+        p {
+            color: variables.$white;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+.contact {
+    height: 515px;
+}
+
+.map {
+    height: 515px;
+}
+
+.contact-box {
+    border-radius: 15px;
+    background: #2E2B2C;
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.15);
+    width: 526px;
+    color: variables.$white;
+    padding: 25px 41px 24px 43px;
+    position: relative;
+    top: -470px;
+    left: 109px;
+
+    .contact-header {
+        position: relative;
+        padding-bottom: 26px;
+
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            content: "";
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.15) 48.33%, rgba(255, 255, 255, 0.00) 100.87%);
+        }
+
+        h1 {
+            color: variables.$white;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.contact-body {
+    padding-bottom: 28px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        content: "";
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.15) 48.33%, rgba(255, 255, 255, 0.00) 100.87%);
+    }
+
+    .adress {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .body-info {
+        margin-left: 15px;
+    }
+
+    span {
+        color: variables.$white-gray;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    p {
+        color: variables.$white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.contact-footer {
+    margin-top: 17px;
+
+    .btn {
+        padding: 22px 0;
+        width: 211px;
+    }
+
+    .contact-call__number {
+        h2 {
+            color: variables.$white;
+            font-size: 23px;
+            font-weight: 700;
+        }
+
+        p {
+            color: variables.$white-gray;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}
+
+.contact-socials {
+    margin-top: 30px;
+    text-align: center;
+
+    p {
+        color: variables.$white;
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 26px;
+    }
+
+    .contact-socials__info {
+        gap: 10px;
+    }
+
+}
+
+
+//footer section styles
+.footer {
+    padding: 26px 30px 40px;
+
+    .footer-btn {
+        position: relative;
+        display: inline-block;
+        padding: 51px 55px 60px 0;
+
+        .footer-btn__img {
+            position: absolute;
+            top: 44%;
+            left: 20px;
+        }
+    }
+
+    .services-site {
+        gap: 17px;
+        margin-right: 86px;
+        width: 210px;
+
+        h2 {
+            color: variables.$white;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 3.75px;
+        }
+
+        p {
+            color: variables.$white-gray;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 15px 0 7px 0;
+        }
+
+        a {
+            color: variables.$white;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+        }
+    }
+}
+
+.footer-navigation {
+    gap: 41px;
+
+    a {
+        color: variables.$white;
+        font-size: 20px;
+        font-weight: 500;
+        &:hover{
+            color: variables.$white-gray;
         }
     }
 }

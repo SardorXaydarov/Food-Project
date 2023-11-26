@@ -31,7 +31,7 @@
             left: -12px;
             width: 1px;
             height: 38px;
-            background: variables.$black;
+            background:rgba(255, 255, 255, 0.30);
         }
     }
 
@@ -39,65 +39,4 @@
         color: variables.$white;
         background: linear-gradient(115deg, #72A479 5.11%, #618967 94%);
     }
-}
-
-.banner-btn {
-    color: variables.$white;
-    font-family: 'Zing Rust Demo Base';
-    font-size: 25px;
-    font-weight: 400;
-    background: variables.$linear-bg;
-    transform: skewY(350deg) rotate(0deg);
-    margin-top: 20px;
-    padding: 5px 23px;
-    position: relative;
-}
-
-.nav-tabs {
-    border-bottom: none;
-    padding: 29px 0;
-    position: relative;
-}
-
-.nav-tabs::before {
-    position: absolute;
-    content: "";
-    top: 85px;
-    width: 1296px;
-    height: 1px;
-    background: variables.$white-gray;
-}
-
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-    background: none;
-    padding-left: 0;
-    margin-left: 0;
-    border: none;
-    color: variables.$white;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.nav-link.active::before {
-    position: absolute;
-    height: 3px;
-    width: 153px;
-    top: 84px;
-    background: variables.$black-green;
-    content: "";
-}
-
-.nav-tabs .nav-link {
-    border-radius: 0;
-    color: variables.$white-gray;
-    font-size: 18px;
-    font-weight: 400;
-    border: none;
-    margin-right: 40px;
-    padding: 0;
-}
-
-.last-child {
-    margin-right: 0;
 }

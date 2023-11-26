@@ -1,0 +1,102 @@
+@use "../abstracts/variables";
+
+//Slider section styles//
+.swiper {
+    overflow: visible !important;
+}
+
+.slider {
+    margin-top: 50px;
+
+    .slide-box {
+        width: 325px !important;
+        border-radius: 10px;
+        margin-right: 16px !important;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+
+        &:hover {
+            box-shadow: 0px 30px 45px 0px rgba(43, 40, 40, 0.60);
+            cursor: pointer;
+        }
+
+        .slide-content {
+            padding: 14px 20px 18px 16px;
+        }
+    }
+}
+
+.slide-content {
+    .slide-content__header {
+        h3 {
+            color: variables.$white;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        span {
+            color: variables.$white;
+            font-size: 12px;
+            text-align: right;
+            width: 100%;
+            font-weight: 400;
+        }
+    }
+
+    .slide-content__body {
+        margin-top: 5px;
+
+        p {
+            color: variables.$white-gray;
+            width: 249px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    }
+}
+
+.slide-content__footer___one {
+    justify-content: space-between;
+    margin-top: 15px;
+
+    .price {
+        color: variables.$white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .btn-menu {
+        position: relative;
+        color: variables.$white;
+        font-size: 14px;
+        font-weight: 600;
+        background: variables.$linear-bg;
+        border-radius: 10px;
+        padding: 13px 52px 14px 19px;
+
+        &:hover {
+            background: linear-gradient(115deg, #72A479 5.11%, #618967 94%);
+            ;
+        }
+
+        img {
+            position: absolute;
+            right: 16px;
+        }
+    }
+}
+
+.slide-content__footer___two {
+    justify-content: space-between;
+    .price {
+        color: variables.$white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .plus-btn{
+        svg{
+            position: relative;
+            top: 5px;
+        }
+    }
+}
