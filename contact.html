@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Project</title><!-- Gilroy font css -->
+    <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
+    <!-- Zing rust demo font -->
+    <link rel="stylesheet" href="./fonts/zing-rust-demo/stylesheet.css">
+    <!-- Normalize css link -->
+    <link rel="stylesheet" href="libs/normalize.css">
+    <!-- Slider css link -->
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header section -->
+        <header class="header">
+            <div class="container d-flex align-items-center">
+                <a href="index.html" class="header__logo">LOGOS</a>
+                <div class="header__contact d-flex align-items-center">
+                    <div class="header__search-box position-relative">
+                        <img class="location-icon position-absolute" src="images/icons/Location.svg"
+                            alt="Loctation icon">
+                        <input class="header__search w-100" type="text" placeholder="Введите адрес доставки"
+                            name="search">
+                        <img class="position-absolute search-icon" src="images/icons/Search.svg" alt="search icon">
+                    </div>
+                    <div class="header__contact-box d-flex align-items-center">
+                        <div class="call-bg">
+                            <a href="contact.html">
+                                <img class="call-img" src="images/icons/Calling.svg" alt="calling icon">
+                            </a>
+                        </div>
+                        <div class="header__contact-number">
+                            <span>Контакты:</span>
+                            <a href="tel:+7(917)510-57-59">+7(917)510-57-59</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__cart-btn">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#karzinka">
+                        Корзина
+                        <span>4</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main section start -->
+        <main class="main">
+            <section class="navigation-section contact-navigation">
+                <div class="container">
+                    <ul class="nav-list d-flex">
+                        <li class="nav-item">
+                            <a class="link" href="#cold">Холодные закуски</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#hot">Горячие закуски</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#meet">Мясные блюда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#!">Супы </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#!">Рыбные блюда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#!">Гриль меню</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#!">Фирменные блюда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="margin-right: 0;" class="link" href="#!">Напитки</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Accardions section -->
+            <section class="accardions">
+                <div class="container">
+                    <div class="title-box">
+                        <span class="subtitle"></span>
+                        <h1>Условия доставки</h1>
+                    </div>
+                    <div class="contacts d-flex">
+                        <div class="accardion-cards w-50">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion-one" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            У наших курьеров всегда должна быть сдача!
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-one" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у
+                                                вас будут какие-либо замечания или предложения, то обязательно сообщайте
+                                                их нам</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-two"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Вам что-то не довезли?
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-two" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас
+                                            будут какие-либо замечания или предложения, то обязательно сообщайте их нам
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-three"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Не понравился продукт?
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-three" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас
+                                            будут какие-либо замечания или предложения, то обязательно сообщайте их нам
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-four"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            У наших курьеров всегда должна быть сдача!
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-four" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у
+                                                вас будут какие-либо замечания или предложения, то обязательно сообщайте
+                                                их нам</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-five"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Вам что-то не довезли?
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-five" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас
+                                            будут какие-либо замечания или предложения, то обязательно сообщайте их нам
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-six"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Не понравился продукт?
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-six" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас
+                                            будут какие-либо замечания или предложения, то обязательно сообщайте их нам
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maps w-50">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1278.3644331043324!2d67.22246140000003!3d37.338692699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1701019300420!5m2!1sru!2s"
+                                style="border:0; width: 100%; height: 605px; border-radius: 10px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="time-header d-flex">
+                            <div class="time-header__box">
+                                <h3>График работы доставки:</h3>
+                                <span>с 10:00-21:00</span>
+                            </div>
+                            <div class="time-header__box">
+                                <h3>График работы кафе:</h3>
+                                <span>с 08:00-21:00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="time-body">
+                            <h3>Минимальный заказ:</h3>
+                            <p>Бесплатная доставка пешим курьером при сумме заказа от 400 ₽
+                                Доставка оператором такси от любой суммы заказа - по тарифам
+                                перевозчика.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer section -->
+        <footer class="footer contact-footer d-flex align-items-center">
+            <div class="footer-btn">
+                <a href="#">
+                    <img class="footer-btn__bg" src="images/icons/up-bg.svg" alt="up-bg">
+                    <img class="footer-btn__img" src="images/icons/up.svg" alt="up-icon">
+                </a>
+            </div>
+            <div class="services-site d-flex flex-column">
+                <h2>LOGOS</h2>
+                <p>© ООО СК «АПШЕРОН» Все права защищены. 2010-2020</p>
+                <a href="#!">Пользовательское соглашение</a>
+                <a href="#!">Карта сайта</a>
+                <a href="#!">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-navigation d-flex">
+                <a href="#!"> О ресторане</a>
+                <a href="#!">Условия доставки</a>
+                <a href="#!">Возврат товара</a>
+                <a href="#!">Акции</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modal section -->
+    <div class="modal fade" id="karzinka" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered karzinka-dialog">
+            <div class="modal-content karzinka-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/close.svg" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="karzinka-img">
+                        <img src="images/icons/karzina-img.png" alt="karzina-img">
+                    </div>
+                    <h2>КОРЗИНА ПУСТАЯ</h2>
+                    <button type="button" class="karzina-btn btn">Посмотреть меню</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap js -->
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Slider js -->
+    <script src="js/slider.js"></script>
+    <!-- Swiper js -->
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <!-- Main js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

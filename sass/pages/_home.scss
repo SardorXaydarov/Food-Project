@@ -404,6 +404,7 @@
 //footer section styles
 .footer {
     padding: 26px 30px 40px;
+    background: linear-gradient(271deg, #44403F 0.4%, #211F20 100%);
 
     .footer-btn {
         position: relative;
@@ -434,7 +435,6 @@
             color: variables.$white-gray;
             font-size: 12px;
             font-weight: 500;
-            margin: 15px 0 7px 0;
         }
 
         a {
